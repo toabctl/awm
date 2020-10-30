@@ -1,0 +1,5 @@
+# this file is only needed for readthedocs
+# the content duplicated in setup.cfg
+Sphinx
+doc8
+sphinxcontrib-programoutput

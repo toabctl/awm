@@ -1,0 +1,13 @@
+language: python
+matrix:
+  include:
+  - python: 3.8
+    env: TOX_ENV=lint
+  - python: 3.8
+    env: TOX_ENV=py38
+  - python: 3.8
+    env: TOX_ENV=docs
+install:
+- pip install tox
+script:
+- tox -e $TOX_ENV

@@ -1,0 +1,26 @@
+{
+    "kafka" : {
+	"servers": "HOST:PORT",
+	"topic_name": "awm-crawler",
+	"ssl": {
+	    "enabled": true,
+	    "cafile": "./cacert",
+	    "certfile": "./certfile",
+	    "keyfile": "./keyfile",
+	    "password": "SECRET"
+	}
+    },
+    "persister": {
+	"postgres": {
+	    "uri": "postgres://USERNAME:PASSWORD@HOST:PORT/DATABASE?sslmode=require"
+	}
+    },
+    "crawler": {
+	"interval": 5.0,
+	"urls": {
+	    "https://toabctl.de": { "interval": 1.0, "regex": ".*html.*" },
+	    "https://aiven.io": {},
+	    "https://google.com": {}
+	}
+    }
+}

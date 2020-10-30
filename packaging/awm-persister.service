@@ -1,0 +1,13 @@
+[Unit]
+Description=awm persister service
+
+[Service]
+User=awm
+Group=awm
+Type=simple
+Restart=always
+ExecStart=/usr/bin/awm-persister --config /etc/awm/config.json
+WorkingDirectory=/var/lib/awm/
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+dist
+awm.egg-info/
+.eggs/
+*.pyc
+.tox
+*~
+.mypy_cache/
+docs/build/
