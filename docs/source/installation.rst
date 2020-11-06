@@ -58,6 +58,14 @@ will be periodically checked.
 There is also the possibility to do a regular expression check
 against the url response body. That's optional.
 
+Start
++++++
+
+With the RPM packages, `systemctl` can be used to start the services::
+
+  systemctl start awm-crawler
+  systemctl start awm-persister
+
 Contributing
 ============
 
